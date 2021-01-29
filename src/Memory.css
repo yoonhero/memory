@@ -1,0 +1,59 @@
+.memoryCard {
+    width: 500px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    margin-top: 4rem;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.memoryImg {
+    width: 40%;
+    height: auto;
+}
+
+.components {
+    padding: 20px;
+}
+
+.components h4 {
+    color: #2574a9;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.components p {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.componentDate {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    color: #e87e04;
+}
+
+.components h3 {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem
+}
+
+.likedPic {
+    position: absolute;
+    bottom: 5.5rem;
+    right: 1rem;
+    width: 4rem;
+    height: 2rem;
+    color: #f3f1ef;
+}
+
+.liked {
+    color: #f4d03f;
+}

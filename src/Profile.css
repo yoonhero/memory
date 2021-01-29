@@ -1,0 +1,70 @@
+.profileForm {
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    padding-bottom: 30px;
+    max-width: 320px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.profileForm input {
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.logOut {
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 14px;
+    color: whitesmoke;
+    border-radius: 20px;
+    background-color: #f2784b;
+    margin-bottom: 10rem;
+}
+
+.profileContainer {
+    position: absolute;
+    margin-top: 7rem;
+    width: 100vw;
+    height: auto;
+    background-color: #e8e8e8;
+}
+
+.PhotoBtn {
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 17px;
+}
+
+.likedimg img {
+    margin: 0;
+    width: 250px;
+    height: auto;
+}
+
+.likedimg {
+    transform: translate(-50%);
+    margin-top: 2rem;
+    margin-left: 50%;
+    column-count: 2;
+    padding: 0;
+    align-items: center;
+}
+
+.hideButton {
+    color: #2574a9;
+    top: -25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (max-width: 700px) {
+    .likedimg {
+        column-count: 1;
+    }
+}

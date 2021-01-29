@@ -1,0 +1,108 @@
+.form {
+    width: 100%;
+}
+
+.memoryFormDiv {
+    margin-top: 7rem;
+    position: absolute;
+    max-width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+}
+
+.memoryTitleInput {
+    padding: 20px;
+    left: 50%;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.memoryDefInput {
+    padding: 20px;
+    margin-top: 1rem;
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    border-radius: 20px;
+    resize: none;
+}
+
+.saveMemoryBtn {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    border-radius: 20px;
+    color: white;
+}
+
+.factoryInput__arrow {
+    position: absolute;
+    right: 0;
+    background-color: #04aaff;
+    height: 40px;
+    width: 40px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.factoryInput__label {
+    color: #04aaff;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 20rem;
+    position: absolute;
+    max-width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.factoryInput__label span {
+    margin-top: 1.4rem;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.factoryForm__attachment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 23rem;
+    max-width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10rem;
+}
+
+.factoryForm__attachment img {
+    height: 200px;
+    width: auto;
+}
+
+.factoryForm__clear {
+    color: #04aaff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.factoryForm__clear span {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+
+/*
+.removePreviewImg {
+    position: absolute;
+    top: 0;
+}*/
