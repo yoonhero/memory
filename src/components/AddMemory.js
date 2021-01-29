@@ -93,7 +93,7 @@ const AddMemory = ({ userObj }) => {
                         value={ memoryDef }
                         onChange={ onChange }
                         type="text"
-                        placeholder="오늘의 되돌아보며"
+                        placeholder="오늘의 일을 되돌아보며"
                         maxLength={ 300 }
                         name="definition"
                         className="memoryDefInput"
