@@ -41,10 +41,7 @@ const Memory = ({ userObj, memoryObj }) => {
 
             <div className="memoryImg">
                 { memoryObj.attachmentUrl && <img src={ memoryObj.attachmentUrl }
-                    style={ {
-                        backgroundImage: memoryObj.attachmentUrl,
-                        width: 480,
-                    } } /> }
+                /> }
             </div>
 
             <div className="components">

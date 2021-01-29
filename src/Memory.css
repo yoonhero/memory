@@ -12,8 +12,8 @@
     padding-top: 30px;
 }
 
-.memoryImg {
-    width: 40%;
+.memoryImg img {
+    width: 480px;
     height: auto;
 }
 
@@ -56,4 +56,14 @@
 
 .liked {
     color: #f4d03f;
+}
+
+@media (max-width: 500px) {
+    .memoryCard {
+        width: 320px;
+    }
+    .memoryImg img {
+        width: 300px;
+        height: auto;
+    }
 }
