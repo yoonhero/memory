@@ -3,6 +3,10 @@ import { dbService } from "fbase";
 import { Link } from "react-router-dom";
 import Memory from "components/Memory";
 import styles from "Style.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faSearch
+} from "@fortawesome/free-solid-svg-icons";
 
 const Home = ({ userObj }) => {
     const [search, setSearch] = useState(false);
@@ -10,6 +14,12 @@ const Home = ({ userObj }) => {
     const [memories, setMemories] = useState([]);
     const [memory, setMemory] = useState([]);
     const [mobileSearch, setMobileSearch] = useState(false);
+    const [showModal, setShowModal] = useState(true);
+
+    const openModal = () => {
+        setShowModal(prev => !prev);
+    }
+
     useEffect(() => {
         dbService
             .collection(userObj.uid)
@@ -52,8 +62,9 @@ const Home = ({ userObj }) => {
     return (
         <div className="main">
             <input className="searchBar mobile" type="search" placeholder="Search..." onChange={ onChange } value={ searchKeyWord } />
-            <button className="isMobile" onClick={ onMobileSearch }>?</button>
+            <button className="isMobile" onClick={ onMobileSearch }><FontAwesomeIcon icon={ faSearch }></FontAwesomeIcon></button>
             <div className="container">
+
                 { search === true ? (memory.map((memory) => (
                     < Memory
                         key={ memory.id }
