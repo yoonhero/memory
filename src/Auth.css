@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Yusei+Magic&display=swap');
-body {
-    background: #e4e9ed;
+body {}
+
+.authDiv {
+    background-image: url("https://images.unsplash.com/photo-1607827448299-a099b845f076?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(120%);
 }
 
 .authFormContainer {
-    max-width: 320px
+    max-width: 320px;
 }
 
 .authTitle {
@@ -53,10 +59,17 @@ body {
     width: 100%;
     padding: 10px;
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 20px 20px 30px -6px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
     font-size: 12px;
-    color: black;
+    color: rgba(0, 0, 0, 0.915);
+}
+
+.authInput::placeholder {
+    color: rgba(226, 217, 217, 0.891);
 }
 
 .authSubmit {
@@ -76,11 +89,17 @@ body {
 }
 
 .authSwitch {
-    color: #04aaff;
+    color: #fcfcfc;
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 50px;
     display: block;
     font-size: 12px;
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .authDiv {
+        background-image: url("https://images.unsplash.com/photo-1531844734254-51193b49c604?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    }
 }

@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 html {
     scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
 }
 
 * {
@@ -13,10 +17,13 @@ html {
 }
 
 body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     /*justify-content: center;
-    align-items: center;*/
-    min-height: 100vh;
+    align-items: center;
+    min-height: 100vh;*/
     z-index: 0;
 }
 
@@ -26,20 +33,27 @@ body {
     height: 100vh;
 }
 
-.loadingText {
-    font-family: 'Lobster', cursive;
+.loadingText1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
     position: absolute;
     left: 50%;
     top: 35%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 70px;
+}
+
+.loadingText2 {
+    font-family: 'Nanum Brush Script', cursive;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
 }
 
 .loadingSpinner {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .plus {
@@ -82,6 +96,7 @@ body {
     align-content: center;
     text-align: center;
     max-width: 500px;
+    margin-bottom: 4rem;
 }
 
 .main {
@@ -119,5 +134,7 @@ body {
     }
     .isMobile {
         display: block;
+        background-color: #e4f1fe;
+        color: #81cfe0;
     }
 }

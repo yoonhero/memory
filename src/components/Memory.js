@@ -5,9 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons"
 import { faStar } from "@fortawesome/free-regular-svg-icons"
 const Memory = ({ userObj, memoryObj }) => {
-    const [editing, setEditing] = useState(false);
-    const [newMemoryTitle, setNewMemoryTitle] = useState(memoryObj.title);
-    const [newMemoryDef, setNewMemoryDef] = useState(memoryObj.def);
     const onDeleteClick = async () => {
         const ok = window.confirm(
             "정말로 당신의 기억을 삭제하시겠습니까?"
@@ -53,7 +50,7 @@ const Memory = ({ userObj, memoryObj }) => {
                     : <span onClick={ onLikedClick } className="likedPic"><FontAwesomeIcon icon={ faStar } size="2x" /></span>
                 }
 
-                { memoryObj.date && <span className="componentDate">{ memoryObj.date }</span> }
+                { memoryObj.date && <span className="componentDate">{ memoryObj.date } 기억</span> }
 
                 <h3 onClick={ onDeleteClick } clsasName="componentTrash"><FontAwesomeIcon icon={ faTrash } color="#6DB65B" size="larger" /></h3>
             </div>

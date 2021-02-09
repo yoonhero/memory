@@ -5,7 +5,8 @@ import Memory from "components/Memory";
 import styles from "Style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faSearch
+    faSearch,
+    faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = ({ userObj }) => {
@@ -14,11 +15,6 @@ const Home = ({ userObj }) => {
     const [memories, setMemories] = useState([]);
     const [memory, setMemory] = useState([]);
     const [mobileSearch, setMobileSearch] = useState(false);
-    const [showModal, setShowModal] = useState(true);
-
-    const openModal = () => {
-        setShowModal(prev => !prev);
-    }
 
     useEffect(() => {
         dbService
@@ -34,14 +30,14 @@ const Home = ({ userObj }) => {
             });
 
     }, []);
-    const onChange = (event) => {
+    const onChange = async (event) => {
         const {
             target: { name, value },
         } = event;
         setSearchKey(value);
         setSearch(true)
         var memoryArray = []
-        const filterMemory = memories.filter((memory) => {
+        const filterMemory = await memories.filter((memory) => {
             if (memory.title.toLowerCase().includes(value)) {
                 memoryArray.push(memory)
             } else if (memory.def.toLowerCase().includes(value)) {
@@ -64,7 +60,6 @@ const Home = ({ userObj }) => {
             <input className="searchBar mobile" type="search" placeholder="Search..." onChange={ onChange } value={ searchKeyWord } />
             <button className="isMobile" onClick={ onMobileSearch }><FontAwesomeIcon icon={ faSearch }></FontAwesomeIcon></button>
             <div className="container">
-
                 { search === true ? (memory.map((memory) => (
                     < Memory
                         key={ memory.id }
@@ -79,6 +74,8 @@ const Home = ({ userObj }) => {
                         memoryObj={ memory }
                     />
                 ))) }
+
+
 
             </div>
 

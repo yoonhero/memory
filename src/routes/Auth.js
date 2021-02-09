@@ -19,7 +19,7 @@ const Auth = () => {
     };
 
     return (
-        <div className="auth">
+        <div className="authDiv">
             <div className="authTitle">
                 <h1>Memory</h1>
             </div>
