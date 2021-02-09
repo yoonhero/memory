@@ -6,7 +6,6 @@ body {}
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    filter: brightness(120%);
 }
 
 .authFormContainer {
@@ -112,5 +111,11 @@ body {}
     .authBtn {
         color: #3498db;
         background: #ffffff;
+    }
+}
+
+@media (min-width: 580px) {
+    .authDiv {
+        filter: brightness(120%);
     }
 }
