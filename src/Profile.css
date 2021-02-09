@@ -14,6 +14,28 @@
     border-radius: 20px;
 }
 
+.formInput {
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #34495e;
+}
+
+.formInput::placeholder {
+    color: #34495e;
+}
+
+.formBtn {
+    position: relative;
+    margin-top: 1rem;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #c5eff7;
+    color: #5c97bf;
+}
+
 .logOut {
     margin-top: 50px;
     margin-left: 50%;
@@ -21,7 +43,7 @@
     padding: 14px;
     color: whitesmoke;
     border-radius: 20px;
-    background-color: #f2784b;
+    background-color: #4b77be;
     margin-bottom: 10rem;
 }
 
@@ -39,21 +61,6 @@
     padding: 17px;
 }
 
-.likedimg img {
-    margin: 0;
-    width: 250px;
-    height: auto;
-}
-
-.likedimg {
-    transform: translate(-50%);
-    margin-top: 2rem;
-    margin-left: 50%;
-    column-count: 2;
-    padding: 0;
-    align-items: center;
-}
-
 .hideButton {
     color: #2574a9;
     top: -25px;
@@ -62,8 +69,99 @@
     transform: translate(-50%);
 }
 
-@media (max-width: 700px) {
+.img-circle {
+    border-radius: 50%;
+}
+
+.profileImg {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+}
+
+.span_upload {
+    text-align: center;
+    width: 100%;
+    top: 110px;
+    left: 40px;
+    position: relative;
+    font-size: 15px;
+    color: #446cb3;
+}
+
+.img-thumbnail {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 0;
+    display: inline-block;
+    background: #dbdbdb;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.img-thumbnail>div {
+    display: inline-block;
+    overflow: hidden;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.likedimg img {
+    margin: 0;
+    width: 250px;
+    height: auto;
+}
+
+.likedimg {
+    width: 80%;
+    transform: translate(-50%);
+    margin-top: 10rem;
+    margin-left: 50%;
+    column-count: 2;
+    padding: 0;
+}
+
+@media (max-width: 580px) {
     .likedimg {
-        column-count: 1;
+        column-count: 2;
+    }
+    .likedimg img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 580px) {
+    .likedimg {
+        column-count: 4;
+        column-gap: 50px;
+    }
+    .likedimg img {
+        width: 160px;
+    }
+}
+
+@media (min-width: 700px) {
+    .likedimg {
+        column-count: 2;
+    }
+    .likedimg img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 980px) {
+    .likedimg {
+        column-count: 3;
+    }
+    .likedimg img {
+        width: 300px;
     }
 }

@@ -81,7 +81,7 @@ body {
 .searchBar {
     border-radius: 20px;
     position: absolute;
-    right: 4rem;
+    right: 5rem;
     top: 2.2rem;
     max-width: 12rem;
     height: 2rem;
@@ -91,17 +91,16 @@ body {
 .container {
     transform: translate(-50%);
     margin-left: 50%;
-    margin-top: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 110rem;
     align-items: center;
     align-content: center;
     text-align: center;
     max-width: 500px;
-    margin-bottom: 4rem;
 }
 
 .main {
     width: 100vw;
-    margin-bottom: 10rem;
 }
 
 .isMobile {

@@ -5,7 +5,7 @@ const inputStyles = {};
 const AuthForm = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [newAccount, setNewAccount] = useState(false);
+    const [newAccount, setNewAccount] = useState(true);
     const [error, setError] = useState("");
     const onChange = (event) => {
         const {
@@ -67,7 +67,7 @@ const AuthForm = () => {
                 { error && <span className="authError">{ error }</span> }
             </form>
             <span onClick={ toggleAccount } className="authSwitch">
-                { newAccount ? "로그인" : (<span>계정이 없다면 가입하기</span>) }
+                { newAccount ? (<span>계정이 있으시나요? 로그인</span>) : (<span>계정이 없다면 가입하기</span>) }
             </span>
         </>
     );

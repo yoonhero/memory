@@ -20,7 +20,7 @@ body {}
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 25%;
+    top: 20%;
 }
 
 .authContainer {
@@ -48,8 +48,8 @@ body {}
     text-align: center;
     width: 40px;
     height: 40px;
-    color: #3498db;
-    background: white;
+    color: #ffffff;
+    background: #3498db;
     cursor: pointer;
 }
 
@@ -73,19 +73,24 @@ body {}
 }
 
 .authSubmit {
+    margin-top: 2rem;
     text-align: center;
     background: #04aaff;
     color: white;
     margin-top: 10;
     cursor: pointer;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .authError {
     position: relative;
-    color: tomato;
+    color: #e24242;
     text-align: center;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
+    background-color: rgba(225, 181, 181, 0.891);
 }
 
 .authSwitch {
@@ -101,5 +106,9 @@ body {}
 @media (max-width: 800px) {
     .authDiv {
         background-image: url("https://images.unsplash.com/photo-1531844734254-51193b49c604?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    }
+    .authBtn {
+        color: #3498db;
+        background: #ffffff;
     }
 }

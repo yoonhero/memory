@@ -10,6 +10,7 @@ import Profile from "../routes/Profile";
 
 import Navigation from "components/Navigation"
 import AddMemory from "./AddMemory";
+import LikePicture from "./LikePicture";
 
 const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
     return (
@@ -31,6 +32,10 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
                             <AddMemory
                                 userObj={ userObj }
                             />
+                        </Route>
+                        <Route exact path="/likedPictures">
+                            <LikePicture
+                                userObj={ userObj } />
                         </Route>
                     </div>
                 ) : (
