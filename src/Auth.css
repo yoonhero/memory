@@ -65,7 +65,7 @@ body {}
     box-shadow: 20px 20px 30px -6px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.915);
+    color: white;
 }
 
 .authInput::placeholder {

@@ -30,7 +30,7 @@ const Navigation = ({ userObj }) => {
             <nav>
                 <span className="navProfile">
                     { attachment !== "" ? (
-                        <img src={ attachment } className="profileMainImg" />
+                        <img src={ attachment } className="profileMainImg" style={ { width: 50, height: 50 } } />
                     ) : (
                             <FontAwesomeIcon icon={ faUser } size="2x" />
                         ) }
